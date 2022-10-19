@@ -152,7 +152,7 @@ body {
   line-height: 1.1;
   /* On Android Firefox, emoji can't be displayed if font-size > 77px. */
   font-size: 75px;
-  text-align: center;
+/*   text-align: center; */
 }
 
 .Header__Title {
@@ -162,7 +162,7 @@ body {
   font-size: 2.625rem;
   font-weight: 700;
   letter-spacing: -0.005em;
-  text-align: center;
+/*   text-align: center; */
 }
 
 .Header > *:last-child {
