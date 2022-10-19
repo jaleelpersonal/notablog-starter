@@ -15,6 +15,7 @@ body {
   font-size: 16px;
   position: fixed;
   top: 0;
+  float:right;
   left: 0;
   z-index: 999;
   width: 100%;
@@ -34,8 +35,6 @@ body {
 
 .Navbar a:last-child > .Navbar__Btn {
   /* .nav padding 20px */
-  margin-right: 20px;
-  text-align: right;
 }
 
 .Navbar__Btn {
