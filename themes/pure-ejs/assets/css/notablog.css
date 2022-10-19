@@ -303,6 +303,28 @@ body {
   -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
 }
 
+.index-card {
+    margin-bottom: 2.5rem;
+}
+.ml-auto, .mx-auto {
+    margin-left: auto!important;
+}
+.mr-auto, .mx-auto {
+    margin-right: auto!important;
+}
+
+.index-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.row {
+    display: flex;
+}
+
 /* Footer */
 
 .Footer {
