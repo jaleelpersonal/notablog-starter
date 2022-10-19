@@ -17,34 +17,36 @@
 
 <body>
   <%- include('partials/navbar.html', { siteMeta }) %>
-  <header class="Header">
-    <% if (siteMeta.cover) { %>
-      <div class="Header__Cover">
-        <img src="<%= siteMeta.cover %>">
+  <div class="rootbackground">
+    <header class="Header">
+      <% if (siteMeta.cover) { %>
+        <div class="Header__Cover">
+          <img src="<%= siteMeta.cover %>">
+        </div>
+      <% } %>
+      <div class="Header__Spacer <% if (!siteMeta.cover) { %>Header__Spacer--NoCover<% } %>">
       </div>
-    <% } %>
-    <div class="Header__Spacer <% if (!siteMeta.cover) { %>Header__Spacer--NoCover<% } %>">
+      <% if (siteMeta.iconUrl) { %>
+        <div class="Header__Icon">
+          <span><img class="inline-img-icon" src="<%= siteMeta.iconUrl %>"></span>
+        </div>
+      <% } %>
+      <h1 class="Header__Title"><%= siteMeta.title %></h1>
+      <% if (siteMeta.description) { %>
+        <div class="Header__Desc">
+          <span class="Header__DescBigQuoteMark">&ldquo;</span>
+          <%- siteMeta.descriptionHTML %>
+          <span class="Header__DescBigQuoteMark">&bdquo;</span>
+        </div>
+      <% } %>
+    </header>
+    <div class="articleListbackground">
+      <%- include('partials/articleList.html', {
+        pages: siteMeta.pages.filter(page => page.publish && page.inList) 
+      }) %>
+      <%- include('partials/footer.html', { siteMeta }) %>
     </div>
-    <% if (siteMeta.iconUrl) { %>
-      <div class="Header__Icon">
-        <span><img class="inline-img-icon" src="<%= siteMeta.iconUrl %>"></span>
-      </div>
-    <% } %>
-    <h1 class="Header__Title"><%= siteMeta.title %></h1>
-    <% if (siteMeta.description) { %>
-      <div class="Header__Desc">
-        <span class="Header__DescBigQuoteMark">&ldquo;</span>
-        <%- siteMeta.descriptionHTML %>
-        <span class="Header__DescBigQuoteMark">&bdquo;</span>
-      </div>
-    <% } %>
-  </header>
-  <div class="articleListbackground">
-    <%- include('partials/articleList.html', {
-      pages: siteMeta.pages.filter(page => page.publish && page.inList) 
-    }) %>
-    <%- include('partials/footer.html', { siteMeta }) %>
-  </div>
+  </div> 
 </body>
 
 </html>
