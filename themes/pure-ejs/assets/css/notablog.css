@@ -35,6 +35,7 @@ body {
 .Navbar a:last-child > .Navbar__Btn {
   /* .nav padding 20px */
   margin-right: 20px;
+  text-align: right;
 }
 
 .Navbar__Btn {
