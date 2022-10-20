@@ -13,8 +13,16 @@
 
 <body>
   <%- include('partials/navbar.html', { siteMeta }) %>
+<!--   <header class="Header"> -->
+<!--     <div class="Header__Spacer--NoCover"></div> -->
   <header class="Header">
-    <div class="Header__Spacer--NoCover"></div>
+    <% if (siteMeta.cover) { %>
+      <div class="Header__Cover">
+        <img src="<%= siteMeta.cover %>">
+      </div>
+    <% } %>
+    <div class="Header__Spacer <% if (!siteMeta.cover) { %>Header__Spacer--NoCover<% } %>">
+  </div>
     <h1 class="Header__Title">#<%= tagName %></h1>
   </header>
   <%- include('partials/articleList.html', {
