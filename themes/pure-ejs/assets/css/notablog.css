@@ -107,16 +107,17 @@ body {
 }
 
 .ArticleList {
-  width: 900px;
-  max-width: 100%;
-  margin: 0px auto;
-  padding: 0px 96px;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);
-  -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
+    width: 900px;
+    max-width: 100%;
+    margin: 0px auto;
+    padding: 0px 96px;
+    /* margin-top: 60px; */
+    /* margin-bottom: 60px; */
+    -webkit-box-shadow: 0px 0px 20px 11px rgb(202 203 203 / 50%);
+    -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
+    background-color: white;
+    padding-top: 16px !important;
 }
-
 
 
 @media only screen and (max-width: 900px) {
@@ -345,27 +346,6 @@ body {
     margin-left: -15px;
 }
 
-/* github */
-.d-flex {
-    display: flex !important;
-}
-
-.flex-wrap {
-    flex-wrap: wrap !important;
-}
-
-.list-style-none {
-    list-style: none !important;
-}
-
-.gutter-condensed {
-    margin-right: -8px;
-    margin-left: -8px;
-}
-
-.mb-4 {
-    margin-bottom: 24px !important;
-}
 
 /* Footer */
 
