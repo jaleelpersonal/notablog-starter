@@ -36,7 +36,7 @@ body {
   background-color: var(--bg-blur);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
-  overflow-x: auto;
+/*   overflow-x: auto; */
 }
 
 .Navbar a {
@@ -81,7 +81,7 @@ body {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: .3125rem;
+/*   padding-top: .3125rem; */
   padding-bottom: .3125rem;
   margin-right: 1rem;
   font-size: 1.25rem;
