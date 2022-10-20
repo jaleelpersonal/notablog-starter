@@ -87,6 +87,7 @@ body {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
+  margin: 0px auto auto 0px;
 }
 
 /* Common */
