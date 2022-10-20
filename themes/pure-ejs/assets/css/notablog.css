@@ -314,9 +314,14 @@ body {
   -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
 }
 
+.m-auto {
+    margin: auto!important;
+}
+
 .index-card {
     margin-bottom: 2.5rem;
 }
+
 .ml-auto, .mx-auto {
     margin-left: auto!important;
 }
@@ -334,6 +339,10 @@ body {
 
 .row {
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
 /* Footer */
