@@ -39,18 +39,10 @@
       </div>
     <% } %>
   </header>
-  
-  <div class="row">
-    <div class="m-auto">
-      
-  
-      <%- include('partials/articleList.html', {
-        pages: siteMeta.pages.filter(page => page.publish && page.inList) 
-      }) %>
-      <%- include('partials/footer.html', { siteMeta }) %>
-        
-    </div> 
-  </div>
+  <%- include('partials/articleList.html', {
+    pages: siteMeta.pages.filter(page => page.publish && page.inList) 
+  }) %>
+  <%- include('partials/footer.html', { siteMeta }) %>
 </body>
 
 </html>
