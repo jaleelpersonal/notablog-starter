@@ -1,28 +1,13 @@
-/* :root {
+:root {
   --bg: rgb(250, 250, 246);
   --bg1: #eee;
   --bg2: #fff;
   --bg-blur: rgba(250, 250, 246, 0.4);
 }
- */
-:root {
-    --primary-color: #2a9d8f; /* 更现代的主题色 */
-    --background-color: #f4f4f4; /* 柔和背景色 */
-    --text-color: #333; /* 提高对比度的文字颜色 */
-    --link-color: #065f46; /* 链接颜色 */
-    --hover-color: #064e3b; /* 鼠标悬停颜色 */
-}
-
-
-/* body {
-  background: var(--bg);
-  background: var(--bg1);
-} */
 
 body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    font-family: 'Source Sans Pro', sans-serif; /* 确保字体统一 */
+  background: var(--bg);
+  background: var(--bg1);
 }
 
 .rootbackground {
